@@ -315,7 +315,7 @@ with col3:
     st.write("Realiza OCR para convertir texto desde imágenes.")
     st.markdown(
     """
-    <a href="https://isavinasco.streamlit.app/" target="_blank">
+    <a href="https://ocr-audiojero.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
