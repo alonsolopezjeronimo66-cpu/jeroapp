@@ -195,7 +195,7 @@ with col2:
     st.write("Convierte audio en texto automáticamente.")
     st.markdown(
     """
-    <a href="https://texto-voz.streamlit.app/" target="_blank">
+    <a href="https://traductorjero.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
