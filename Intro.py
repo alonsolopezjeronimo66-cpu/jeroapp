@@ -46,7 +46,7 @@ st.image(image, width=200)
 st.write("Esta fue mi primera aplicación desarrollada con Streamlit. ⚽ Un punto de partida en mi camino de exploración con la Inteligencia Artificial, la programación y la creatividad digital.")
 st.markdown(
     """
-    <a href="https://miprimeraappisa.streamlit.app/" target="_blank">
+    <a href="https://introjeronimo.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
