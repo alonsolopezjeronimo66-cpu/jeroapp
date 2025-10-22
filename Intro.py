@@ -23,30 +23,39 @@ col1, col2, col3 = st.columns(3)
 
 # ======================== COLUMNA 1 ========================
 with col1:
-    #APP1
-    st.subheader("Conversión de texto a voz")
+   st.subheader("⚽ Mi Primera App: De Texto a Voz Azul Futbolero")
+
     image = Image.open('OIG5.jpg')
     st.image(image, width=190)
-    st.write("En el siguiente enlace podrás usar nuestra aplicación de Inteligencia Artificial para convertir texto a voz:")
 
-    # Botón rosado
+    st.write(
+    """
+    ¡Bienvenido a mi primera aplicación del repositorio!  
+    Esta herramienta convierte cualquier texto en voz usando Inteligencia Artificial.  
+    Su diseño y espíritu están inspirados en la pasión futbolera — azul, fuerte y siempre en movimiento. 💙  
+    Perfecta para narrar tus ideas, mensajes o incluso tus cánticos favoritos del estadio.
+    """
+    )
+
+    # Botón azul futbolero
     st.markdown(
-        """
-        <a href="https://introjeronimo.streamlit.app/">
-            <button style="
-                background-color:#ff66b3;
-                color:white;
-                border:none;
-                padding:12px 24px;
-                border-radius:8px;
-                font-size:16px;
-                cursor:pointer;
-            ">
-                💗 Abrir aplicación de Texto a Voz
-            </button>
-        </a>
-        """,
-        unsafe_allow_html=True
+    """
+    <a href="https://introjeronimo.streamlit.app/">
+        <button style="
+            background-color:#0047AB;
+            color:white;
+            border:none;
+            padding:12px 24px;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+        ">
+            💙 Probar la App de Texto a Voz
+        </button>
+    </a>
+    """,
+    unsafe_allow_html=True
     )
 
     # --- Reconocimiento de Objetos ---
