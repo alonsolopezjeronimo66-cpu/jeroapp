@@ -25,14 +25,14 @@ col1, col2, col3 = st.columns(3)
 with col1:
     #APP1
     st.subheader("Conversión de texto a voz")
-    image = Image.open('texto_avoz.jpg')
+    image = Image.open('OIG5.jpg')
     st.image(image, width=190)
     st.write("En el siguiente enlace podrás usar nuestra aplicación de Inteligencia Artificial para convertir texto a voz:")
 
     # Botón rosado
     st.markdown(
         """
-        <a href="https://intro3-cv4kbcjgxbiveh8ph2kmyp.streamlit.app/" target="_blank">
+        <a href="https://introjeronimo.streamlit.app/">
             <button style="
                 background-color:#ff66b3;
                 color:white;
