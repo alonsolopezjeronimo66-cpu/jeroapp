@@ -121,7 +121,7 @@ with col1:
     st.write("Reconoce gestos humanos usando modelos de visión por computadora.")
     st.markdown(
     """
-    <a href="https://yolov5-isa.streamlit.app/" target="_blank">
+    <a href="https://recogestosjero-8faufkkywwrtbkzmufjy6c.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
