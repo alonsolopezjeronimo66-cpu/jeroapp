@@ -41,7 +41,7 @@ with st.sidebar:
 
 # --- App: Mi Primera App ---
 st.subheader("Mi Primera App")
-image = Image.open('app1.jpg')  
+image = Image.open('arnoldo.jpg')  
 st.image(image, width=200)
 st.write("Esta fue mi primera aplicación desarrollada con Streamlit. 🌸 Un punto de partida en mi camino de exploración con la Inteligencia Artificial, la programación y la creatividad digital.")
 st.markdown(
@@ -69,7 +69,7 @@ col1, col2, col3 = st.columns([1, 1, 1], gap="large")
 with col1:
     st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
     st.subheader("Conversión de texto a voz")
-    image = Image.open('texto_avoz.jpg')
+    image = Image.open('dayro.jpg')
     st.image(image, width=190)
     st.write("En el siguiente enlace podrás usar nuestra aplicación de Inteligencia Artificial para convertir texto a voz:")
     st.markdown(
@@ -92,7 +92,7 @@ with col1:
     )
 
     st.subheader("Analizador de Sentimientos")
-    image = Image.open('sentimientos.jpg')
+    image = Image.open('mayer.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás analizar el sentimiento de un texto y descubrir si es positivo, negativo o neutro, con ayuda de Inteligencia Artificial.")
     st.markdown(
@@ -115,7 +115,7 @@ with col1:
     )
 
     st.subheader("Reconocimiento de Gestos")
-    image = Image.open('gesto.jpg')
+    image = Image.open('pedro.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás reconocer gestos humanos usando modelos de visión por computadora basados en YOLOv5. Ideal para interacción sin contacto y control gestual.")
     st.markdown(
@@ -138,7 +138,7 @@ with col1:
     )
 
     st.subheader("Interpretación de Objetos en Imagen")
-    image = Image.open('vision_app.jpg')
+    image = Image.open('cadavid.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás subir una imagen y el modelo de IA interpretará, mostrándolos en pantalla.")
     st.markdown(
@@ -161,7 +161,7 @@ with col1:
     )
 
     st.subheader("Control por Voz")
-    image = Image.open('voice.jpg')
+    image = Image.open('gamero.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás controlar acciones mediante comandos de voz, usando reconocimiento de habla y procesamiento de lenguaje natural.")
     st.markdown(
@@ -188,7 +188,7 @@ with col1:
 with col2:
     st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
     st.subheader("Conversión de Audio a texto")
-    image = Image.open('audio_atexto.jpg')
+    image = Image.open('ruiz.jpg')
     st.image(image, width=200)
     st.write("En la siguiente enlace podrás usar la aplicación de Inteligencia Artificial que convierte archivos de audio a texto.")
     st.markdown(
@@ -211,7 +211,7 @@ with col2:
     )
 
     st.subheader("Análisis de Documentos")
-    image = Image.open('analisis_texto.jpg')
+    image = Image.open('larry.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás analizar el contenido de documentos en texto, identificar temas clave y generar resúmenes con ayuda de Inteligencia Artificial.")
     st.markdown(
@@ -234,7 +234,7 @@ with col2:
     )
 
     st.subheader("Detección de Rostros")
-    image = Image.open('OCR.jpg')
+    image = Image.open('vargas.jpg')
     st.image(image, width=200)
     st.write("En la siguiente aplicación podrás detectar rostros en una imagen o foto tomada con tu cámara, y escuchar el resultado en diferentes idiomas.")
     st.markdown(
@@ -257,7 +257,7 @@ with col2:
     )
 
     st.subheader("Reconocer el Dibujo")
-    image = Image.open('dibujo.jpg')
+    image = Image.open('vega.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás subir un dibujo o realizar uno a mano, y la Inteligencia Artificial intentará reconocer qué representa tu creación. 🎨")
     st.markdown(
@@ -280,7 +280,7 @@ with col2:
     )
 
     st.subheader("Control LED (IoT)")
-    image = Image.open('control.jpg')
+    image = Image.open('falcao.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás controlar un sistema LED mediante comandos MQTT, interactuando con dispositivos IoT en tiempo real. 💡")
     st.markdown(
@@ -307,7 +307,7 @@ with col2:
 with col3:
     st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
     st.subheader("Reconocimiento Óptico de Caracteres")
-    image = Image.open('ocr_final.jpg')
+    image = Image.open('catano.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás realizar reconocimiento óptico de caracteres (OCR) y convertir texto desde imágenes de forma precisa y rápida.")
     st.markdown(
@@ -330,7 +330,7 @@ with col3:
     )
 
     st.subheader("Análisis de Textos en Inglés")
-    image = Image.open('texto_ingles.jpg')
+    image = Image.open('leo.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás analizar textos en inglés, identificar sentimientos, temas principales y generar resúmenes con modelos de Inteligencia Artificial.")
     st.markdown(
@@ -353,7 +353,7 @@ with col3:
     )
 
     st.subheader("Chat con PDF")
-    image = Image.open('chat_pdf.jpg')
+    image = Image.open('llinas.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás interactuar de forma conversacional con el contenido de un documento PDF usando IA.")
     st.markdown(
@@ -376,7 +376,7 @@ with col3:
     )
 
     st.subheader("Historia a partir de un Dibujo")
-    image = Image.open('historia.jpg')
+    image = Image.open('maca.jpg')
     st.image(image, width=200)
     st.write("En esta aplicación podrás generar una historia completa a partir de un dibujo infantil. La Inteligencia Artificial interpreta la imagen y crea un cuento mágico inspirado en ella. ✨")
     st.markdown(
