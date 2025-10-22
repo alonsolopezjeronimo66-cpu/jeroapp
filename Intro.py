@@ -2,19 +2,19 @@ import streamlit as st
 from PIL import Image
 
 # --- Configuración general ---
-st.set_page_config(page_title="Aplicaciones IA 💗", layout="wide")
+st.set_page_config(page_title="Aplicaciones IA ⚽", layout="wide")
 
-# Fondo rosado
+# Fondo azul futbolero
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: #ffe6f2;
+    background-color: #e6f0ff; /* azul claro */
 }
 [data-testid="stSidebar"] {
-    background-color: #ffb3d9;
+    background-color: #99ccff; /* azul medio */
 }
 h1, h2, h3, p {
-    color: #333333;
+    color: #002b80; /* azul oscuro */
     text-align: center;
 }
 button {
@@ -22,7 +22,7 @@ button {
     margin: 0 auto;
 }
 
-/* 💗 --- FIX para quitar las líneas azules de los enlaces --- */
+/* ⚽ --- FIX para quitar las líneas de los enlaces --- */
 a, a:visited, a:hover, a:active {
     text-decoration: none !important;
     outline: none !important;
@@ -32,23 +32,23 @@ a, a:visited, a:hover, a:active {
 """
 st.markdown(page_bg, unsafe_allow_html=True)
 
-st.title("Aplicaciones")
+st.title("Aplicaciones ⚽")
 
 with st.sidebar:
-    st.subheader("Aplicaciones con Inteligencia Artificial.")
+    st.subheader("Aplicaciones con Inteligencia Artificial ⚽")
     parrafo = "Estas son mis aplicaciones desarrolladas en clase"
     st.write(parrafo)
 
 # --- App: Mi Primera App ---
 st.subheader("Mi Primera App")
-image = Image.open('arnoldo.jpg')  
+image = Image.open('arnoldo.jpg')
 st.image(image, width=200)
-st.write("Esta fue mi primera aplicación desarrollada con Streamlit. 🌸 Un punto de partida en mi camino de exploración con la Inteligencia Artificial, la programación y la creatividad digital.")
+st.write("Esta fue mi primera aplicación desarrollada con Streamlit. ⚽ Un punto de partida en mi camino de exploración con la Inteligencia Artificial, la programación y la creatividad digital.")
 st.markdown(
     """
     <a href="https://miprimeraappisa.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -56,7 +56,7 @@ st.markdown(
             font-size:16px;
             cursor:pointer;
         ">
-            💗 Abrir Mi Primera App
+            ⚽ Abrir Mi Primera App
         </button>
     </a>
     """,
@@ -66,17 +66,18 @@ st.markdown(
 # --- Crear columnas alineadas ---
 col1, col2, col3 = st.columns([1, 1, 1], gap="large")
 
+# --- Columna 1 ---
 with col1:
     st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
     st.subheader("Conversión de texto a voz")
     image = Image.open('dayro.jpg')
     st.image(image, width=190)
-    st.write("En el siguiente enlace podrás usar nuestra aplicación de Inteligencia Artificial para convertir texto a voz:")
+    st.write("Convierte texto a voz usando Inteligencia Artificial.")
     st.markdown(
         """
         <a href="https://intro3-cv4kbcjgxbiveh8ph2kmyp.streamlit.app/" target="_blank">
             <button style="
-                background-color:#ff66b3;
+                background-color:#0047b3;
                 color:white;
                 border:none;
                 padding:12px 24px;
@@ -84,7 +85,7 @@ with col1:
                 font-size:16px;
                 cursor:pointer;
             ">
-                💗 Abrir aplicación de Texto a Voz
+                ⚽ Abrir aplicación de Texto a Voz
             </button>
         </a>
         """,
@@ -94,12 +95,12 @@ with col1:
     st.subheader("Analizador de Sentimientos")
     image = Image.open('mayer.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás analizar el sentimiento de un texto y descubrir si es positivo, negativo o neutro, con ayuda de Inteligencia Artificial.")
+    st.write("Analiza si un texto tiene un sentimiento positivo, negativo o neutro.")
     st.markdown(
     """
     <a href="https://isabelavinasco.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -107,7 +108,7 @@ with col1:
             font-size:16px;
             cursor:pointer;
         ">
-            💬 Abrir Analizador de Sentimientos
+            ⚽ Abrir Analizador de Sentimientos
         </button>
     </a>
     """,
@@ -117,12 +118,12 @@ with col1:
     st.subheader("Reconocimiento de Gestos")
     image = Image.open('pedro.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás reconocer gestos humanos usando modelos de visión por computadora basados en YOLOv5. Ideal para interacción sin contacto y control gestual.")
+    st.write("Reconoce gestos humanos usando modelos de visión por computadora.")
     st.markdown(
     """
     <a href="https://yolov5-isa.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -130,7 +131,7 @@ with col1:
             font-size:16px;
             cursor:pointer;
         ">
-            ✋ Abrir Reconocimiento de Gestos
+            ⚽ Abrir Reconocimiento de Gestos
         </button>
     </a>
     """,
@@ -140,12 +141,12 @@ with col1:
     st.subheader("Interpretación de Objetos en Imagen")
     image = Image.open('cadavid.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás subir una imagen y el modelo de IA interpretará, mostrándolos en pantalla.")
+    st.write("Sube una imagen y la IA te dirá qué objetos aparecen en ella.")
     st.markdown(
     """
     <a href="https://visionapp-isa-lpq3fitf2jwnkastes8odi.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -153,7 +154,7 @@ with col1:
             font-size:16px;
             cursor:pointer;
         ">
-            🖼️ Abrir Reconocimiento de Objetos
+            ⚽ Abrir Reconocimiento de Objetos
         </button>
     </a>
     """,
@@ -163,12 +164,12 @@ with col1:
     st.subheader("Control por Voz")
     image = Image.open('gamero.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás controlar acciones mediante comandos de voz, usando reconocimiento de habla y procesamiento de lenguaje natural.")
+    st.write("Controla acciones mediante comandos de voz.")
     st.markdown(
     """
     <a href="https://ctrlvoiceisa.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -176,7 +177,7 @@ with col1:
             font-size:16px;
             cursor:pointer;
         ">
-            🎙️ Abrir Control por Voz
+            ⚽ Abrir Control por Voz
         </button>
     </a>
     """,
@@ -185,17 +186,18 @@ with col1:
     st.markdown("</div>", unsafe_allow_html=True)
 
 
+# --- Columna 2 ---
 with col2:
     st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
-    st.subheader("Conversión de Audio a texto")
+    st.subheader("Conversión de Audio a Texto")
     image = Image.open('ruiz.jpg')
     st.image(image, width=200)
-    st.write("En la siguiente enlace podrás usar la aplicación de Inteligencia Artificial que convierte archivos de audio a texto.")
+    st.write("Convierte audio en texto automáticamente.")
     st.markdown(
     """
     <a href="https://intro2-fojj4mqk3pvfuy4gb5twvg.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -203,7 +205,7 @@ with col2:
             font-size:16px;
             cursor:pointer;
         ">
-            🎧 Abrir aplicación de Audio a Texto
+            ⚽ Abrir aplicación de Audio a Texto
         </button>
     </a>
     """,
@@ -213,12 +215,12 @@ with col2:
     st.subheader("Análisis de Documentos")
     image = Image.open('larry.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás analizar el contenido de documentos en texto, identificar temas clave y generar resúmenes con ayuda de Inteligencia Artificial.")
+    st.write("Analiza documentos y genera resúmenes con IA.")
     st.markdown(
     """
     <a href="https://textoesp.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -226,7 +228,7 @@ with col2:
             font-size:16px;
             cursor:pointer;
         ">
-            📑 Abrir Análisis de Documentos
+            ⚽ Abrir Análisis de Documentos
         </button>
     </a>
     """,
@@ -236,12 +238,12 @@ with col2:
     st.subheader("Detección de Rostros")
     image = Image.open('vargas.jpg')
     st.image(image, width=200)
-    st.write("En la siguiente aplicación podrás detectar rostros en una imagen o foto tomada con tu cámara, y escuchar el resultado en diferentes idiomas.")
+    st.write("Detecta rostros en imágenes y escucha los resultados.")
     st.markdown(
     """
     <a href="https://ocr-isa2.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -249,7 +251,7 @@ with col2:
             font-size:16px;
             cursor:pointer;
         ">
-            🧠 Abrir aplicación de Detección de Rostros
+            ⚽ Abrir aplicación de Detección de Rostros
         </button>
     </a>
     """,
@@ -259,12 +261,12 @@ with col2:
     st.subheader("Reconocer el Dibujo")
     image = Image.open('vega.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás subir un dibujo o realizar uno a mano, y la Inteligencia Artificial intentará reconocer qué representa tu creación. 🎨")
+    st.write("La IA intenta adivinar qué representa tu dibujo.")
     st.markdown(
     """
     <a href="https://reconnocer-el-dibujo.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -272,7 +274,7 @@ with col2:
             font-size:16px;
             cursor:pointer;
         ">
-            🖌️ Abrir Reconocimiento de Dibujo
+            ⚽ Abrir Reconocimiento de Dibujo
         </button>
     </a>
     """,
@@ -282,12 +284,12 @@ with col2:
     st.subheader("Control LED (IoT)")
     image = Image.open('falcao.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás controlar un sistema LED mediante comandos MQTT, interactuando con dispositivos IoT en tiempo real. 💡")
+    st.write("Controla luces LED usando tecnología IoT en tiempo real.")
     st.markdown(
     """
     <a href="https://enviarcmqttisa.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -295,7 +297,7 @@ with col2:
             font-size:16px;
             cursor:pointer;
         ">
-            💡 Abrir Control LED (IoT)
+            ⚽ Abrir Control LED (IoT)
         </button>
     </a>
     """,
@@ -304,17 +306,18 @@ with col2:
     st.markdown("</div>", unsafe_allow_html=True)
 
 
+# --- Columna 3 ---
 with col3:
     st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
     st.subheader("Reconocimiento Óptico de Caracteres")
     image = Image.open('catano.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás realizar reconocimiento óptico de caracteres (OCR) y convertir texto desde imágenes de forma precisa y rápida.")
+    st.write("Realiza OCR para convertir texto desde imágenes.")
     st.markdown(
     """
     <a href="https://isavinasco.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -322,7 +325,7 @@ with col3:
             font-size:16px;
             cursor:pointer;
         ">
-            🔤 Abrir Aplicación OCR Final
+            ⚽ Abrir Aplicación OCR Final
         </button>
     </a>
     """,
@@ -332,12 +335,12 @@ with col3:
     st.subheader("Análisis de Textos en Inglés")
     image = Image.open('leo.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás analizar textos en inglés, identificar sentimientos, temas principales y generar resúmenes con modelos de Inteligencia Artificial.")
+    st.write("Analiza textos en inglés e identifica temas o sentimientos.")
     st.markdown(
     """
     <a href="https://isabela-vinasco-docs.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -345,7 +348,7 @@ with col3:
             font-size:16px;
             cursor:pointer;
         ">
-            🇬🇧 Abrir Análisis de Textos en Inglés
+            ⚽ Abrir Análisis de Textos en Inglés
         </button>
     </a>
     """,
@@ -355,12 +358,12 @@ with col3:
     st.subheader("Chat con PDF")
     image = Image.open('llinas.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás interactuar de forma conversacional con el contenido de un documento PDF usando IA.")
+    st.write("Habla con tus documentos PDF gracias a la IA.")
     st.markdown(
     """
     <a href="https://chatpdfejercicioisa.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -368,7 +371,7 @@ with col3:
             font-size:16px;
             cursor:pointer;
         ">
-            📄 Abrir Chat con PDF
+            ⚽ Abrir Chat con PDF
         </button>
     </a>
     """,
@@ -378,12 +381,12 @@ with col3:
     st.subheader("Historia a partir de un Dibujo")
     image = Image.open('maca.jpg')
     st.image(image, width=200)
-    st.write("En esta aplicación podrás generar una historia completa a partir de un dibujo infantil. La Inteligencia Artificial interpreta la imagen y crea un cuento mágico inspirado en ella. ✨")
+    st.write("Genera una historia completa a partir de un dibujo infantil.")
     st.markdown(
     """
     <a href="https://historia-infantil.streamlit.app/" target="_blank">
         <button style="
-            background-color:#ff66b3;
+            background-color:#0047b3;
             color:white;
             border:none;
             padding:12px 24px;
@@ -391,7 +394,7 @@ with col3:
             font-size:16px;
             cursor:pointer;
         ">
-            🧚 Abrir Historia a partir de un Dibujo
+            ⚽ Abrir Historia a partir de un Dibujo
         </button>
     </a>
     """,
