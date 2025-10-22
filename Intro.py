@@ -98,7 +98,7 @@ with col1:
     st.write("Analiza si un texto tiene un sentimiento positivo, negativo o neutro.")
     st.markdown(
     """
-    <a href="https://isabelavinasco.streamlit.app/" target="_blank">
+    <a href="https://oaemt27uwmahmd2hjlpqn3.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
