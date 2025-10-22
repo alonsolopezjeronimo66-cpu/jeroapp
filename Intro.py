@@ -75,7 +75,7 @@ with col1:
     st.write("Convierte texto a voz usando Inteligencia Artificial.")
     st.markdown(
         """
-        <a href="https://intro3-cv4kbcjgxbiveh8ph2kmyp.streamlit.app/" target="_blank">
+        <a href="https://texto-voz.streamlit.app/" target="_blank">
             <button style="
                 background-color:#0047b3;
                 color:white;
