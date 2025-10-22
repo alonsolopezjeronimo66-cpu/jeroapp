@@ -61,7 +61,7 @@ with col1:
     """, unsafe_allow_html=True)
 
     # --- Sección Conversión de texto a voz ---
-    st.markdown('<div class="title">⚽ Conversión de texto a voz</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title">⚽ Intro </div>', unsafe_allow_html=True)
     image = Image.open('txt_to_audio2.png')
     st.image(image, width=250, caption="Transforma tus palabras en voz con IA")
     st.write("Usa una aplicación de **Inteligencia Artificial** para convertir texto en voz fácilmente:")
