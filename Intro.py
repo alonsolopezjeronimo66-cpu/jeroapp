@@ -23,52 +23,31 @@ col1, col2, col3 = st.columns(3)
 
 # ======================== COLUMNA 1 ========================
 with col1:
-    # Estilo personalizado (azul futbolero)
-    st.markdown("""
-        <style>
-        .main {
-            background-color: #001F3F;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-        .title {
-            text-align: center;
-            font-size: 24px;
-            color: #00BFFF;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .stButton > button {
-            background-color: #0074D9;
-            color: white;
-            border: none;
-            padding: 0.6em 2em;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: 0.3s;
-            font-weight: bold;
-        }
-        .stButton > button:hover {
-            background-color: #00BFFF;
-            transform: scale(1.05);
-        }
-        </style>
-    """, unsafe_allow_html=True)
+    #APP1
+    st.subheader("Conversión de texto a voz")
+    image = Image.open('texto_avoz.jpg')
+    st.image(image, width=190)
+    st.write("En el siguiente enlace podrás usar nuestra aplicación de Inteligencia Artificial para convertir texto a voz:")
 
-    # --- Sección Conversión de texto a voz ---
-    st.markdown('<div class="title">⚽ Intro </div>', unsafe_allow_html=True)
-    image = Image.open('txt_to_audio2.png')
-    st.image(image, width=250, caption="Transforma tus palabras en voz con IA")
-    st.write("Usa una aplicación de **Inteligencia Artificial** para convertir texto en voz fácilmente:")
-    st.markdown('<div class="button-container">', unsafe_allow_html=True)
-    if st.button("Ir a la página introductoria 🚀"):
-        st.markdown("<meta http-equiv='refresh' content='0; url=https://introjeronimo.streamlit.app/'>", unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+    # Botón rosado
+    st.markdown(
+        """
+        <a href="https://intro3-cv4kbcjgxbiveh8ph2kmyp.streamlit.app/" target="_blank">
+            <button style="
+                background-color:#ff66b3;
+                color:white;
+                border:none;
+                padding:12px 24px;
+                border-radius:8px;
+                font-size:16px;
+                cursor:pointer;
+            ">
+                💗 Abrir aplicación de Texto a Voz
+            </button>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
 
     # --- Reconocimiento de Objetos ---
     st.subheader("Reconocimiento de Objetos")
