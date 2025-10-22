@@ -18,12 +18,62 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
  
- st.subheader("Conversión de texto a voz")
- image = Image.open('txt_to_audio2.png')
- st.image(image, width=190)
- st.write("En la siguiente enlace usaremos una de las aplicaciones de Inteligencia Artificial") 
- url = "https://imultimod.streamlit.app/"
- st.write(f"Texto a voz: [Enlace]({url})")
+import streamlit as st
+from PIL import Image
+
+# Estilo personalizado (azul futbolero)
+st.markdown("""
+    <style>
+    .main {
+        background-color: #001F3F;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    .title {
+        text-align: center;
+        font-size: 32px;
+        color: #00BFFF;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .stButton > button {
+        background-color: #0074D9;
+        color: white;
+        border: none;
+        padding: 0.6em 2em;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    .stButton > button:hover {
+        background-color: #00BFFF;
+        transform: scale(1.05);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Título
+st.markdown('<div class="title">⚽ Conversión de texto a voz</div>', unsafe_allow_html=True)
+
+# Imagen
+image = Image.open('txt_to_audio2.png')
+st.image(image, width=250, caption="Transforma tus palabras en voz con IA")
+
+# Texto
+st.write("Usa una aplicación de **Inteligencia Artificial** para convertir texto en voz fácilmente:")
+
+# Botón centrado
+st.markdown('<div class="button-container">', unsafe_allow_html=True)
+if st.button("Ir a la página introductoria 🚀"):
+    st.switch_page("https://introjeronimo.streamlit.app/")
+st.markdown('</div>', unsafe_allow_html=True)
+
 
  st.subheader("Reconocimiento de Objetos")
  image = Image.open('txt_to_audio.png')
