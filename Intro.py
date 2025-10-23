@@ -264,7 +264,7 @@ with col2:
     st.write("La IA intenta adivinar qué representa tu dibujo.")
     st.markdown(
     """
-    <a href="https://reconnocer-el-dibujo.streamlit.app/" target="_blank">
+    <a href="https://reconnocer-el-dibujojero-ebk7qyasvzl3ztxdtdto7h.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
