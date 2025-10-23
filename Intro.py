@@ -144,7 +144,7 @@ with col1:
     st.write("Sube una imagen y la IA te dirá qué objetos aparecen en ella.")
     st.markdown(
     """
-    <a href="https://visionapp-isa-lpq3fitf2jwnkastes8odi.streamlit.app/" target="_blank">
+    <a href="https://visionappjero.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
