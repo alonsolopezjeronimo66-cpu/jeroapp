@@ -167,7 +167,7 @@ with col1:
     st.write("Controla acciones mediante comandos de voz.")
     st.markdown(
     """
-    <a href="https://ctrlvoiceisa.streamlit.app/" target="_blank">
+    <a href="https://ctrlvoicejero-a9ffv2jt3rk6cbxmgqbqbg.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
