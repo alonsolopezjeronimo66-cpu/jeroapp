@@ -384,7 +384,7 @@ with col3:
     st.write("Genera una historia completa a partir de un dibujo infantil.")
     st.markdown(
     """
-    <a href="https://historia-infantil.streamlit.app/" target="_blank">
+    <a href="https://gjf52amqemxdpgnqbjbpos.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
