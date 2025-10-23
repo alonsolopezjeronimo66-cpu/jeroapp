@@ -361,7 +361,7 @@ with col3:
     st.write("Habla con tus documentos PDF gracias a la IA.")
     st.markdown(
     """
-    <a href="https://chatpdfejercicioisa.streamlit.app/" target="_blank">
+    <a href="https://chatpdfjero.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
