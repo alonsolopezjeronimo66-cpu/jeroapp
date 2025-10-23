@@ -235,13 +235,13 @@ with col2:
     unsafe_allow_html=True
     )
 
-    st.subheader("Detección de Rostros")
+    st.subheader("Detección de objetos y rostros")
     image = Image.open('vargas.jpg')
     st.image(image, width=200)
     st.write("Detecta rostros en imágenes y escucha los resultados.")
     st.markdown(
     """
-    <a href="https://ocr-isa2.streamlit.app/" target="_blank">
+    <a href="https://yolojero-bwrxdh68nxq2ouevtvnu4z.streamlit.app/" target="_blank">
         <button style="
             background-color:#0047b3;
             color:white;
